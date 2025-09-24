@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JAprints — Custom Prints on Mugs, Tiles & More</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <h1>JAprints</h1>
+        <p class="tag">Printing that lasts — mugs, tiles, aluminum frames, rocks & T-shirts</p>
+      </div>
+      <nav class="top-nav">
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#signup">Get 10% Off</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h2>Make your design real — personal gifts & branded merch</h2>
+          <p>High-quality prints on mugs, tiles, metal frames, rocks, and T-shirts. Fast turnaround, local delivery.</p>
+          <a href="#signup" class="cta">Get your 10% referral discount</a>
+        </div>
+        <div class="hero-right">
+          <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2d8c4ad1f54b9b3f2e1b5e52dd2d0fa8"
+               alt="Printing examples" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container about">
+      <h3>About JAprints</h3>
+      <p>At JAprints we bring your designs to life on unusual surfaces and classic favourites. Perfect for gifts, events, and small-business merchandising.</p>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="container gallery">
+      <h3>Gallery</h3>
+      <div class="grid">
+        <img src="https://images.unsplash.com/photo-1515548214704-7465b5c3f9b1?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3e2ecdd4a8b7fdd3b9ab6a2b5e57b9b0" alt="Mug printing">
+        <img src="https://images.unsplash.com/photo-1608320904693-bf9af3d2e1b5?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=58c54606df3e09d3d5d16c9b5d5d3c58" alt="Tshirt printing">
+        <img src="https://images.unsplash.com/photo-1573497019364-ade3b3ce5f7d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=96fd3b3a9f9b7e0b9f4f7a3b6d9e1ef3" alt="Tiles printing">
+        <img src="https://images.unsplash.com/photo-1581091870620-3a4f9b59f1b4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=4e2a3f8d5c7a5e2b7e9c9a2f1c3d5baf" alt="Frame printing">
+      </div>
+    </section>
+
+    <!-- SIGNUP / REFERRAL -->
+    <section id="signup" class="container signup-section">
+      <h3>Join JAprints — get a referral link & 10% off</h3>
+      <p>Enter your email to join the list. You’ll receive your unique referral link to share — when someone signs up with your link, you get a 10% discount code.</p>
+
+      <div class="form-card">
+        <div id="status" class="status-msg"></div>
+
+        <label for="emailInput">Your email</label>
+        <input id="emailInput" type="email" placeholder="you@example.com" />
+
+        <!-- hidden field will be filled automatically if a ref exists in URL -->
+        <input type="hidden" id="refParam" />
+
+        <button id="signupBtn" class="btn">Sign up & get my link</button>
+
+        <div id="afterSignup" class="after-signup" style="display:none;">
+          <p>Thanks! Your referral link:</p>
+          <div id="refLinkBox" class="ref-box"></div>
+          <p id="refInfo" class="muted"></p>
+          <p class="muted">Share this link on WhatsApp, Instagram or send it by message.</p>
+          <a id="whatsappShare" target="_blank" rel="noopener" class="btn hollow">Share on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© <strong>JAprints</strong> • Contact: <a href="mailto:info@japrints.example">info@japrints.example</a> • <a href="https://wa.me/00000000000" target="_blank" rel="noopener">WhatsApp</a></div>
+      <div class="muted">You can view signups & referrals in your Firebase console.</div>
+    </div>
+  </footer>
+
+  <!-- Firebase SDK + App script -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
